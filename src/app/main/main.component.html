@@ -51,9 +51,26 @@
 <section class="section-container" id="main_recipes">
     <div class="section-content w1366">
         <h4>Recipes</h4>
-        <div *ngFor="let recipe of recipes; even as e">
-            <li>{{recipe.name}}</li>
-            <div>{{recipe.id}}</div>
+        <p class="section-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia odio justo, a posuere dui rhoncus eu.
+            Maecenas ex magna, scelerisque ut euismod eget, fringilla id purus. Phasellus eros odio, molestie eget dui
+            a, imperdiet semper ante
+        </p>
+        <div class="services-container">
+            <div class="row col-sm-12">
+                <div class="col-sm-4 services-item"  *ngFor="let recipe of recipes">
+                    <div class="services-content">
+                        <div class="img-container">
+                            <!-- <img class="w100" src="assets/images/main/service1.jpg" alt="Service 1"> -->
+                            <img class="w100" [src]="recipe.images.medium">
+                        </div>
+                        <div class="services-info">
+                            <h5>{{recipe.title}}</h5>
+                            <p>{{recipe.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -62,52 +79,35 @@
 <!-- SECTION #4 -->
 <!---------------->
 <section class="section-container" id="main_services">
-    <div class="section-content w1366">
+    <div class="section-content w1366 text-center">
         <h4>Services</h4>
-        <p class="section-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia odio justo, a posuere dui rhoncus eu.
-            Maecenas ex magna, scelerisque ut euismod eget, fringilla id purus. Phasellus eros odio, molestie eget dui
-            a, imperdiet semper ante
-        </p>
-        <div class="services-container">
-            <div class="row col-sm-12">
-                <div class="col-sm-4 services-item">
-                    <div class="services-content">
-                        <div class="img-container">
-                            <img class="w100" src="assets/images/main/service1.jpg" alt="Service 1">
-                        </div>
-                        <div class="services-info">
-                            <h5>Food & Beverages</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima adipisci, magnam nostrum
-                                odio quam animi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 services-item">
-                    <div class="services-content">
-                        <div class="img-container">
-                            <img class="w100" src="assets/images/main/service2.jpg" alt="Service 2">
-                        </div>
-                        <div class="services-info">
-                            <h5>Perfect Atmosphere</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima adipisci, magnam nostrum
-                                odio quam animi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 services-item">
-                    <div class="services-content">
-                        <div class="img-container">
-                            <img class="w100" src="assets/images/main/service3.jpg" alt="Service 3">
-                        </div>
-                        <div class="services-info">
-                            <h5>Full Package</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima adipisci, magnam nostrum
-                                odio quam animi</p>
-                        </div>
+        <div class="grid-area">
+            <div class="grid-area-content">
+                <div class="img-container">
+                    <img class="w100" src="assets/images/main/service1.jpg">
+                    <div class="img-desc">
+                        <p>Food and Beverages</p>
                     </div>
                 </div>
             </div>
+            <div class="grid-area-content">
+                <div class="img-container">
+                    <img class="w100" src="assets/images/main/service2.jpg">
+                    <div class="img-desc">
+                        <p>Perfect Atmosphere</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-area-content">
+                <div class="img-container">
+                    <img class="w100" src="assets/images/main/service3.jpg">
+                    <div class="img-desc">
+                        <p>Full Package</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
     </div>
 </section>

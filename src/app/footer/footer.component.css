@@ -1,0 +1,28 @@
+#main_contact {
+    background: rgb(146 0 3 / 64%);
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_contact .footer-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main_contact .footer-menu span,
+#main_contact .footer-social img  {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#main_contact .footer-social img:hover  {
+    transform: scale(1.1);
+}
+
+#main_contact .footer-menu span:hover  {
+    color: aqua;
+}
