@@ -1,1 +1,17 @@
-<p>header works!</p>
+<div class="header-container" id="header">
+    <a class="link-item" title="about" (click)="goToAbout()">
+        ABOUT US
+    </a>
+    <a class="link-item" title="recipes" (click)="goToRecipes()">
+        RECIPES
+    </a>
+    <a class="logo-container" (click)="goToMain()">
+        <img src="assets/images/logo.png" alt="Logo">
+    </a>
+    <a class="link-item" title="services" (click)="goToServices()">
+        SERVICES
+    </a>
+    <a class="link-item" title="contact" (click)="goToContact()">
+        CONTACT US
+    </a>
+</div>

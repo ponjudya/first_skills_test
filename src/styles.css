@@ -1,1 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.w1366 {
+    width: 100%;
+	max-width: 1366px !important;
+    margin: 0 auto;
+}
+
+.w100 {
+	width: 100% !important;
+}
+
+
+/* Fonts */
+@font-face {
+	font-family: "Lato-light";
+	src: url(/assets/fonts/Lato-Light.ttf);
+}
+@font-face {
+	font-family: "Baguette";
+	src: url(/assets/fonts/Baguette.ttf);
+}
+@font-face {
+	font-family: "Roullasse";
+	src: url(/assets/fonts/Roullasse.ttf);
+}
+@font-face {
+	font-family: "Yellow-Ginger";
+	src: url(/assets/fonts/Yellow-Ginger.ttf);
+}
+@font-face {
+	font-family: "Autumn";
+	src: url(/assets/fonts/Autumn.ttf);
+}
+@font-face {
+	font-family: "Henshin";
+	src: url(/assets/fonts/Henshin.otf);
+}
+
+
+/* Animation */
+@-webkit-keyframes scaleUp {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
+@keyframes scaleUp {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
+@-webkit-keyframes slideDown {
+	from {
+		transform: translateY(-60%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+@keyframes slideDown {
+	from {
+		transform: translateY(-60%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+@-webkit-keyframes slideUp {
+	from {
+		transform: translateY(100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+@keyframes slideUp {
+	from {
+		transform: translateY(100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+/* Animation */
+
+
+
+app-header {
+	/* position: fixed; */
+	width: 100%;
+	height: 88px;
+	display: block;
+	background-color: #fff;
+	z-index: 20;
+}
