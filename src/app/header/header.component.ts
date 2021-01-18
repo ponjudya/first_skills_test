@@ -17,11 +17,14 @@ export class HeaderComponent implements OnInit {
   onWindowScroll() {
 
     let header = document.getElementById('header');
+    let header_mobile = document.getElementById('header_mobile');
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       header.classList.add('header-fixed');
+      header_mobile.classList.add('header-fixed');
     } else {
       header.classList.remove('header-fixed');
+      header_mobile.classList.remove('header-fixed');
     }
   }
 

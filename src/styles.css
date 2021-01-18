@@ -1,8 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 .w1366 {
@@ -124,4 +131,74 @@ app-header {
     @keyframes scaleUp {
         from, to {overflow: hidden;}
     }
+}
+
+
+
+/* =================================================== */
+/******************** Media Queries ********************/
+/* =================================================== */
+.sm-show,
+.md-show {
+	display: none !important;
+}
+
+
+/* 1366 */
+@media only screen and (max-width: 1366px) {
+	.w1366 {
+		max-width: 1200px;
+	}
+	.sm-show {
+		display: none !important;
+	}
+	.sm-hide {
+		display: block !important;
+	}
+
+}
+
+
+/* md */
+@media only screen and (max-width: 991px) {
+
+
+
+	.md-hide {
+		display: none !important;
+	}
+	.md-show {
+		display: block !important;
+	}
+	.sm-show {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	app-header {
+		height: 70px;
+	}
+
+	.sm-show {
+		display: block !important; 
+	}
+	.sm-hide {
+		display: none !important;
+	}
+}
+/* sm */
+@media only screen and (max-width: 475px) {
+
+	
+
+	.sm-hide {
+		display: none !important;
+	}
+	.sm-show {
+		display: block !important;
+	}
+	.md-show {
+		display: none !important;
+	}
 }

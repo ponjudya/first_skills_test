@@ -71,3 +71,65 @@
 .mobile-header-container {
 	display: none;
 }
+
+
+
+/* 1366 */
+@media only screen and (max-width: 1366px) {
+	.w1366 {
+		max-width: 1200px;
+	}
+
+}
+
+
+/* md */
+@media only screen and (max-width: 991px) {
+
+
+
+}
+
+
+/* sm */
+@media only screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden !important;
+	}
+	.mobile-header {
+		width: 100%;
+		z-index: 9;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow: hidden !important;
+		padding: 10px;
+		height: 70px;
+	}
+
+	.mobile-header .logo-container img {
+		width: 60px;
+	}
+
+	.mobile-header .openbtn {
+		background-color: transparent;
+		border: none;
+		font-size: 30px;
+		margin: 0;
+		height: 100%;
+	}
+
+	.mobile-header .openbtn:focus {
+		outline: none !important;
+	}
+
+	.header-fixed {
+		box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.65);
+		background-color: #fff; 
+		position: fixed;
+	}
+	
+
+	
+
+}

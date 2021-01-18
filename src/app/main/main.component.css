@@ -9,26 +9,7 @@
 	text-align: center;
 	padding-top: 125px;
 }
-/* #main_banner .img-container {
-	position: absolute;
-	top: 0;
-    left: 0;
-    z-index: -1;
-	width: 100%;
-	height: 100%;
-  	margin-top: 100px;
-	background-image: url('assets/images/main/banner.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	min-height: 100vh;
-	animation-fill-mode: forwards;
-    animation: .8s scaleUp ease; 
-    @keyframes scaleUp {
-        from, to {overflow: hidden;}
-    }
-} */
+
 #main_banner > .section-content img[alt="cloud_up"] {
 	position: absolute;
 	width: 100%;
@@ -285,3 +266,83 @@
 }
 
 /* END SECTION 4 */
+
+
+
+
+
+/* 1366 */
+@media only screen and (max-width: 1366px) {
+	.w1366 {
+		max-width: 1200px;
+	}
+
+}
+
+
+/* md */
+@media only screen and (max-width: 991px) {
+
+
+
+}
+
+
+/* sm */
+@media only screen and (max-width: 768px) {
+	#main_about .col-sm-6 .img-container img {
+		width: 100%;
+		padding: 10px;
+	}
+	#main_banner .img-container {
+		margin-top: 0px;
+	}
+	#main_banner > .section-content img[alt="cloud_up"],
+	#main_banner > .section-content img[alt="cloud_down"] {
+		display: none;
+	}
+	#main_banner > .section-content {
+    	min-height: 100%;
+    	padding-top: 0px;
+	}
+	#main_about .col-sm-12,
+	#main_about .col-sm-6,
+	#main_about .col-sm-6 .img-container {
+		padding: 0;
+		margin: 0;
+	}
+	#main_about h4,
+	#main_recipes h4,
+	#main_services h4 {
+		font-size: 30px;
+	}
+
+	#main_recipes h5 {
+		font-size: 21px;
+	}
+
+	#main_banner .img-container {
+		animation-fill-mode: forwards;
+		animation: .8s scaleUp ease; 
+		@keyframes scaleUp {
+			from, to {overflow: hidden;}
+		}
+	}
+
+	#main_services .grid-area {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 25px;
+		padding: 0;
+	}
+
+	#main_services {
+		padding: 30px;
+	}
+
+	#main_services h4 {
+		margin-bottom: 30px;
+	}
+
+
+}
