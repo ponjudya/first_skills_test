@@ -128,8 +128,82 @@
 		background-color: #fff; 
 		position: fixed;
 	}
-	
 
+	/* Sidebar */
+	#sidebarContainer {
+		transition: 5s;
+	}
+
+	.sidebar {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 9999;
+		top: 0;
+		right: 0;
+		background-color: #fff;
+		overflow-x: hidden;
+		transition: 0.5s;
+	}
+
+	.sidebar_holder {
+		padding: 30px;
+	}
+
+	.sidebar a:hover {
+		color: #3b0002;
+	}
+
+	.sidebar .closebtn {
+		position: absolute;
+		top: 0;
+		right: 15px;
+		font-size: 36px;
+		color: #3b0002 !important;
+	}
+
+	.sidebar .menu_logo_container {
+		text-align: center;
+	}
+
+	.sideBarWidth {
+		width: 100%;
+    	box-shadow: -10px 0px 10px 1px #000000;
+	}
+
+	
+	.sidebar_text {
+		font-family: 'Lato-light';
+		color: #000;
+		font-size: 16px;
+		line-height: 26px;
+		text-align: center;
+		margin-bottom: 0 !important;
+		padding: 0;
+	}
+
+	.sidebar_holder ul {
+		list-style: none !important;
+		padding: 30px 0;
+	}
+
+	.sidebar_holder li {
+		font-family: 'LatoBold';
+		font-size: 26px;
+		text-transform: uppercase;
+		list-style-type: none;
+		padding: 5px;
+		text-align: center;
+	} 
+	
+	.sidebar_holder li a {
+		color: #3b0002;
+	}
+
+	.sidebar_holder li a:hover {
+		text-decoration: none;
+		color: #920003;
+	}
 	
 
 }

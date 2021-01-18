@@ -23,7 +23,52 @@
         <a class="logo-container" (click)="goToMain()">
             <img src="assets/images/logo.png" alt="Logo">
         </a>
-        <button class="openbtn">☰</button>
+        <button class="openbtn" (click)="openNav()">☰</button>
+    </div>
+
+
+    <div id="sidebarContainer">
+        <div id="mySidebar" class="sidebar">
+            <div class="sidebar_holder">
+                <a class="closebtn" (click)="closeNav()">×</a>
+
+                <div class="menu_logo_container" (click)="goToMain(); closeNav()">
+                    <img src="assets/images/logo.png" alt="Logo" >
+                </div>
+
+                <p class="sidebar_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, pariatur reprehenderit fugiat sapiente doloremque veritatis 
+                    ea officia exercitationem repudiandae facilis quo, quaerat necessitatibus maxime dolores consequatur obcaecati, quam optio quidem.
+                </p>
+                
+                <ul>
+                    <li>
+                        <a class="link-item" title="about" (click)="goToAbout();closeNav()">
+                            ABOUT US
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="link-item" title="recipes" (click)="goToRecipes();closeNav()">
+                            RECIPES
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="link-item" title="services" (click)="goToServices();closeNav()">
+                            SERVICES
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="link-item" title="contact" (click)="goToContact();closeNav()">
+                            CONTACT US
+                        </a>
+                    </li>
+                </ul>
+                    
+            </div>
+        </div>
     </div>
 </div>
 

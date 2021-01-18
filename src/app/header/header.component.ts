@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,8 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+  public opened = false;
 
   constructor() { }
 
@@ -51,6 +54,32 @@ export class HeaderComponent implements OnInit {
   goToContact() {
     let contact = document.getElementById('main_contact');
     contact.scrollIntoView({ behavior: "smooth" });
+  }
+
+
+  openNav() {
+    console.log("in")
+    let body = document.body;
+    let sideBar = document.getElementById("mySidebar");
+    let nav = document.getElementById("nav");
+    let home = document.getElementById("homeMobile");
+      sideBar.classList.add('sideBarWidth');
+      body.classList.add('overflow-none');
+      nav.classList.add('overlay');
+      home.classList.add('overlay');
+      this.opened = true;
+  }
+
+  closeNav() {
+    let body = document.body;
+    let sideBar = document.getElementById("mySidebar");
+    let nav = document.getElementById("nav");
+    let home = document.getElementById("homeMobile");
+      sideBar.classList.remove('sideBarWidth');
+      body.classList.remove('overflow-none');
+      nav.classList.remove('overlay');
+      home.classList.remove('overlay');
+      this.opened = false;
   }
 
 }
