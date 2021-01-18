@@ -9,7 +9,7 @@ import { catchError, retry } from 'rxjs/operators';
 })
 export class RecipeService {
 
-  private _url: string = "./assets/data/data.json";
+  private _url: string = "assets/data/data.json";
 
   constructor(private http: HttpClient) { }
 
