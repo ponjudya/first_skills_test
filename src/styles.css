@@ -19,11 +19,11 @@ body {
 /* Fonts */
 @font-face {
 	font-family: "Lato-light";
-	src: url(/assets/fonts/Lato-Light.ttf);
+	src: url(assets/fonts/Lato-Light.ttf);
 }
 @font-face {
 	font-family: "Baguette";
-	src: url(/assets/fonts/Baguette.ttf);
+	src: url(assets/fonts/Baguette.ttf);
 }
 @font-face {
 	font-family: "Roullasse";
@@ -35,7 +35,7 @@ body {
 }
 @font-face {
 	font-family: "Autumn";
-	src: url(/assets/fonts/Autumn.ttf);
+	src: url(assets/fonts/Autumn.ttf);
 }
 @font-face {
 	font-family: "Henshin";
