@@ -105,3 +105,23 @@ app-header {
 	z-index: 20;
 }
 
+#main_banner .img-container {
+	position: absolute;
+	top: 0;
+    left: 0;
+    z-index: -1;
+	width: 100%;
+	height: 100%;
+  	margin-top: 100px;
+	background-image: url('assets/images/main/banner.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 100vh;
+	animation-fill-mode: forwards;
+    animation: .8s scaleUp ease; 
+    @keyframes scaleUp {
+        from, to {overflow: hidden;}
+    }
+}
